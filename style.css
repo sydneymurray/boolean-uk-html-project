@@ -91,23 +91,95 @@ body {
 
   /* VIDEO SECTION  ********************************************/
   .video{
-      display: grid;
-      border: 4px solid rgb(255, 166, 0);
-      margin-left: auto;
-      margin-right: auto;
-      margin-top:3ch;
-      border-radius: 5px;
-      box-shadow: 5px 8px 8px rgb(0, 43, 122);
-      max-width: fit-content;
-      height:auto;
-      background-color: rgb(0, 43, 122);
+    display: grid;
+    border: 4px solid rgb(255, 166, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:3ch;
+    border-radius: 5px;
+    box-shadow: 5px 8px 8px rgb(0, 43, 122);
+    max-width: fit-content;
+    height:auto;
+    background-color: rgb(0, 43, 122);
+    justify-content: center;
   }
   .video video{
       width: 1280px;
   }
 
+  /* INFO SECTION **********************************************/
+  .info{
+    display: grid;
+    grid-template:
+    ". about-me . suggestions ." auto/
+    4fr 400px 1fr 400px 4fr;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-me{
+    grid-area: about-me;
+    background-color: rgb(0, 43, 122); 
+    margin-top:3ch;
+    border: 4px solid rgb(255, 166, 0);
+    border-radius: 5px;
+    box-shadow: 5px 8px 8px rgb(0, 43, 122);
+    margin-bottom: 3ch;
+  }
+  .about-me h2{
+    color: rgb(255, 254, 188);
+    font-weight: bold;
+    padding-top:1ch;
+  }
+  .about-me p{
+    color: rgb(255, 254, 188);
+    padding:2ch;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .suggestions{
+    grid-area: suggestions;
+    background-color: rgb(0, 43, 122);
+    grid-template:
+    "suggestions-heading" auto
+    "guest-input" auto /
+     1fr; 
+    background-color: rgb(0, 43, 122); 
+    margin-top:3ch;
+    border: 4px solid rgb(255, 166, 0);
+    border-radius: 5px;
+    box-shadow: 5px 8px 8px rgb(0, 43, 122);
+    margin-bottom: 3ch;
+  }
+  .suggestions-heading{
+    grid-area:suggestions-heading;
+    font-weight: bold;
+    padding-top: 1ch;
+    padding-bottom: 1ch;
+    color: rgb(255, 254, 188);
+  }
+  .name-input{
+      width:43.5ch;
+      background-color:rgba(117, 0, 121, 0.925);
+  }
+  .email-input{
+    width:43.6ch;
+    background-color:rgba(117, 0, 121, 0.925);
+  }
+  .guest-input textarea{
+    background-color:rgba(117, 0, 121, 0.925);
+    text-align: left;
+    width: 368px;
+  }
+  .name-label, .email-label{
+    color:rgb(255, 254, 188);  
+  }
+  .guest-input .submit-button{
+    background-color:rgba(117, 0, 121, 0.925);
+    margin-top: 1ch;
+    width: 13ch;
+  }
   
-  /* Effects ***************************************************/
+  /* EFFECTS ***************************************************/
   .menu-item:hover{
     background-color: aqua;
     color: white;
@@ -115,12 +187,9 @@ body {
     box-shadow: -5px -5px 18px white;
   }
   .title-comment:hover{
-      background-color:rgb(255, 166, 0);
-      color:rgb(0, 43, 122);
-
+    background-color:rgb(255, 166, 0);
+    color:rgb(0, 43, 122);
   }
-
-
 
   /* RESPONSIVENESS *******************************************/
   @media screen and (max-width: 1280px){
@@ -128,9 +197,20 @@ body {
         width: 720px;
     } 
   }
-  @media screen and (max-width: 720px){
+  @media screen and (max-width: 800px){
+    .info{
+        display: grid;
+        grid-template:
+        ". about-me ." auto
+        ". suggestions ." auto/
+        1fr 400px 1fr;
+        margin-left: auto;
+        margin-right: auto;
+      }
+ } 
+ @media screen and (max-width: 730px){
     .video video{
-        width: 500px;
+        width: 490px;
     } 
   }
 

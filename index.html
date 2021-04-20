@@ -12,7 +12,7 @@
         <img src="assets/S-Logo.png" alt="Favourite">
         <h1>My Favourite Things</h1>
         <div class="comment-container">
-            <a href="#" class="title-comment">A Gallery of Joy</a>
+            <a href="#info" class="title-comment">A Gallery of Joy</a>
         </div>
     </div>
     <div class="main-menu">
@@ -24,12 +24,37 @@
             <li class="menu-item"><a href="pages/movies">Movies</a></li>
         </ul>
     </div>
+    
+    <!-- VIDEO SECTION. ------------------------------------------------------------------------>
+    <!-- DRAT DRAT DRAT! YOUTUBE WILL NOT ALLOW ME TO EMBED A LINK TO THIS VIDEO --------------->
+    <!-- IT DISPLAY "PLAY ON YOUTUBE". -------   MAYBE FOR COPYRIGHT REASONS     --------------->
+    <!-- SO I HAD TO DOWNLOAD IT BUT COULD ONLY UPLOAD A 360p COPY OF IT TO GITHUB ------------->
     <div class="video">
         <video controls autoplay muted>
             <source src="assets/Big-Brovaz-Favourite-Things_480p.mp4#t=12,226" type="video/mp4">
             Your browser does not support the video tag.
           </video> 
-
+    </div>
+    <div class="info" id="info">
+        <div class=about-me>
+           <h2>About Me</h2>
+            <p>Life is to be enjoyed not endured!. So with that in mind I decided to build a 
+              <strong>Gallery of Joy</strong>
+              A selection of things in life that I like.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus amet magni exercitationem suscipit quam explicabo culpa? Dicta error debitis numquam ex quidem quibusdam consequatur, repudiandae explicabo sapiente neque perferendis adipisci.
+            </p>
+        </div>
+        <div class="suggestions">
+            <h2 class="suggestions-heading">Suggestions</h2>
+            <form class="guest-input" action="text">
+                <label class="name-label" for="name">Name:</label>
+                <input class="name-input" id="name" name="name" type="text"/>
+                <label class="email-label" for="email">eMail:</label>
+                <input class="email-input" id="email" name="name" type="text"/>
+                <textarea name="comments" id=""  rows="5"></textarea>
+                <input class="submit-button" type="submit">
+            </form>
+        </div>
     </div>
 </body>
 </html>
