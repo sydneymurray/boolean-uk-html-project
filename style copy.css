@@ -215,10 +215,11 @@ body {
 
   /* BACK TO TOP ************************************************/
   .back-to-top{
-    position: sticky;
+    position: absolute;
     display: inline-block;
-    left: 95%;
-    }
+    right: 0%;
+    
+  }
   .back-to-top-icon{
     fill: rgb(255, 254, 188);
     width: 50px;

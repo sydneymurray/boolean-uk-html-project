@@ -89,6 +89,7 @@ body {
     text-decoration: none;
     color: rgb(255, 254, 188);
     font-weight: bold;
+    font-size: 1.5rem;
   }
 
   /* MAIN SECTION  ********************************************/
@@ -135,8 +136,21 @@ body {
     font-size: 0.8rem;
     margin-bottom:3ch;
   }
-  
-  
+
+  /* BACK TO TOP ************************************************/
+  .back-to-top{
+    position: sticky;
+    display: inline-block;
+    left: 95%;
+   }
+  .back-to-top-icon{
+    fill: rgb(255, 254, 188);
+    width: 50px;
+    background-color:  rgb(0, 43, 122);
+    border: 3px solid rgb(255, 166, 0);
+    border-radius: 50%;
+  }
+    
   /* EFFECTS ***************************************************/
   .title:hover{
     background-color: aqua;
@@ -169,7 +183,12 @@ body {
     right: 0;
     bottom: 2ch;  
   }
-   
+  .back-to-top-icon:hover{
+    fill: white;
+    background-color: aqua;
+    border: 3px solid white;
+  }
+
   
   /* RESPONSIVENESS *******************************************/
   @media screen and (max-width: 1586px){
