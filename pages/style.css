@@ -197,11 +197,26 @@ body {
 }
 @media screen and (max-width: 1194px) {
   .main {
-    width: 810px;
+    max-width: 810px;
   }
 }
 @media screen and (max-width: 804px) {
   .main {
-    width: 410px;
+    grid-template-columns: repeat(auto-fit, 184px);
+    width: 100%;
+  }
+  .exhibit-img{
+    width: 184px;
+    height: 138px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .main {
+    grid-template-columns: repeat(auto-fit, 122px);
+  }
+  .exhibit-img{
+    width: 122px;
+    height: 92px;
   }
 }
