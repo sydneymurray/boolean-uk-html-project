@@ -193,9 +193,15 @@ body {
   border-radius: 5px;
   box-shadow: 5px 8px 8px rgb(0, 43, 122);
 }
-.contact-me h2 {
+#contact-me{
+  text-decoration: none !important;
+}
+.contact-me-h2 {
   padding-top: 1ch;
   color: rgb(255, 254, 188);
+}
+.contact-me-span{
+  display: none;
 }
 .contact-me-li {
   display: inline-block;
@@ -241,6 +247,18 @@ body {
 .submit-button:hover {
   background: white;
   color: rgba(117, 0, 121, 0.925);
+}
+.contact-me-h2:hover{
+  transform: scale(1.2);
+  color: rgb(0, 43, 122);
+  text-shadow: white 1px 1px 0,
+  white -1px -1px 0,
+  white 1px -1px 0,
+  white -1px 1px 0;
+}
+.contact-me-h2:hover > .contact-me-span{
+  color: rgb(0, 43, 122);
+  display: inline-block;
 }
 .contact-me-icon:hover {
   box-shadow: 0px 0px 40px white;
